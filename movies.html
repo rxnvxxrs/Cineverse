@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse CineVerse's curated movie library with local search across titles, genres, and years.">
+  <title>Movies | CineVerse</title>
+  <link rel="preconnect" href="https://image.tmdb.org">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="movies">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="CineVerse home"><span class="brand-mark"></span><span>CineVerse</span></a>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="index.html" data-nav-link="home">Home</a>
+        <a href="movies.html" data-nav-link="movies">Movies</a>
+        <a href="genres.html" data-nav-link="genres">Genres</a>
+        <a href="reviews.html" data-nav-link="reviews">Reviews</a>
+        <a href="about.html" data-nav-link="about">About</a>
+        <a href="contact.html" data-nav-link="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <form class="nav-search" data-global-search role="search">
+          <label class="sr-only" for="global-search-movies">Search movies</label>
+          <input id="global-search-movies" type="search" placeholder="Search films">
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+        <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <section class="page-hero reveal">
+      <p class="eyebrow">Curated library</p>
+      <h1>Movies Selected for Discovery</h1>
+      <p>Search across a balanced mix of classics, blockbusters, critical favorites, animation, science fiction, drama, superhero cinema, and thrillers.</p>
+    </section>
+    <section class="section reveal" aria-labelledby="movie-library-title">
+      <div class="toolbar">
+        <label class="search-field" for="movie-search">
+          <input id="movie-search" type="search" data-movie-search placeholder="Search by title, genre, or year">
+          <div class="search-suggestions" data-search-suggestions hidden></div>
+        </label>
+        <span class="result-count" data-result-count>Curated films</span>
+      </div>
+      <div class="filter-row" data-filter-chips aria-label="Curated collection filters"></div>
+      <h2 class="sr-only" id="movie-library-title">Movie Library</h2>
+      <div class="poster-grid" data-movies-grid></div>
+      <p class="empty-state" data-empty-state hidden>No curated films match that search.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><a class="brand" href="index.html"><span class="brand-mark"></span><span>CineVerse</span></a><p>Premium movie discovery with a curated point of view.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="genres.html">Genres</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+      <div><p class="eyebrow">Social</p><div class="social-row"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="X">X</a><a href="#" aria-label="Letterboxd">LB</a></div></div>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

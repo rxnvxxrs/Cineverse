@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore curated CineVerse movie genres including science fiction, superhero films, animation, drama, thrillers, and classics.">
+  <title>Genres | CineVerse</title>
+  <link rel="preconnect" href="https://image.tmdb.org">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="genres">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="CineVerse home"><span class="brand-mark"></span><span>CineVerse</span></a>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="index.html" data-nav-link="home">Home</a><a href="movies.html" data-nav-link="movies">Movies</a><a href="genres.html" data-nav-link="genres">Genres</a><a href="reviews.html" data-nav-link="reviews">Reviews</a><a href="about.html" data-nav-link="about">About</a><a href="contact.html" data-nav-link="contact">Contact</a>
+      </nav>
+      <div class="nav-actions"><form class="nav-search" data-global-search role="search"><label class="sr-only" for="global-search-genres">Search movies</label><input id="global-search-genres" type="search" placeholder="Search films"><button type="submit" aria-label="Search">⌕</button></form><button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" data-nav-toggle><span></span></button></div>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <section class="page-hero reveal">
+      <p class="eyebrow">Explore by Genre</p>
+      <h1>Curated Paths Through Cinema</h1>
+      <p>Each genre is treated as a doorway into mood, craft, and discovery rather than a database filter.</p>
+    </section>
+    <section class="section reveal" aria-labelledby="genre-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Discovery paths</p><h2 id="genre-title">Browse Genres</h2></div>
+      </div>
+      <div class="genre-grid" data-genre-grid></div>
+    </section>
+    <section class="section reveal" aria-labelledby="related-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Cross-genre essentials</p><h2 id="related-title">Start Here</h2></div>
+        <p>Films that move comfortably between eras, moods, and audiences.</p>
+      </div>
+      <div class="poster-grid compact" data-related-grid></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><a class="brand" href="index.html"><span class="brand-mark"></span><span>CineVerse</span></a><p>Genre discovery with editorial restraint and cinematic presentation.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="movies.html">Movies</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+      <div><p class="eyebrow">Social</p><div class="social-row"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="X">X</a><a href="#" aria-label="Letterboxd">LB</a></div></div>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

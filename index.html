@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CineVerse is a premium movie discovery platform for curated films, genres, reviews, and cinematic collections.">
+  <title>CineVerse | Premium Movie Discovery</title>
+  <link rel="preconnect" href="https://image.tmdb.org">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="CineVerse home"><span class="brand-mark"></span><span>CineVerse</span></a>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="index.html" data-nav-link="home">Home</a>
+        <a href="movies.html" data-nav-link="movies">Movies</a>
+        <a href="genres.html" data-nav-link="genres">Genres</a>
+        <a href="reviews.html" data-nav-link="reviews">Reviews</a>
+        <a href="about.html" data-nav-link="about">About</a>
+        <a href="contact.html" data-nav-link="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <form class="nav-search" data-global-search role="search">
+          <label class="sr-only" for="global-search-home">Search movies</label>
+          <input id="global-search-home" type="search" placeholder="Search films">
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+        <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="main">
+    <section class="hero" aria-labelledby="home-title">
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Premium Movie Discovery</p>
+          <h1 id="home-title">Find Your Next Favourite Film</h1>
+          <p>CineVerse curates modern blockbusters, classics, animation, thrillers, dramas, and science fiction into a browsing experience built for people who love cinema.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="movies.html">Explore Movies</a>
+            <a class="button button-secondary" href="#trending">Trending Now</a>
+          </div>
+          <div class="hero-metrics" aria-label="CineVerse highlights">
+            <div class="metric"><strong>87</strong><span>curated films</span></div>
+            <div class="metric"><strong>8</strong><span>collections</span></div>
+            <div class="metric"><strong>20+</strong><span>genres</span></div>
+          </div>
+        </div>
+        <div class="hero-collage" data-hero-collage aria-label="Curated cinematic poster collage"></div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="trending" aria-labelledby="trending-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Now in focus</p>
+          <h2 id="trending-title">Trending Now</h2>
+        </div>
+        <a class="button button-secondary" href="movies.html">View All</a>
+      </div>
+      <div class="poster-grid compact" data-trending-grid></div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="editors-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Curated by CineVerse</p>
+          <h2 id="editors-title">Editor's Picks</h2>
+        </div>
+        <p>Balanced selections across craft, feeling, scale, and cultural impact.</p>
+      </div>
+      <div class="poster-grid" data-editors-grid></div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="collections-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Discovery collections</p>
+          <h2 id="collections-title">Curated Ways In</h2>
+        </div>
+        <p>Focused paths for mood, craft, and weekend discovery.</p>
+      </div>
+      <div class="collection-grid" data-discovery-grid></div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="genres-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Discovery paths</p>
+          <h2 id="genres-title">Explore by Genre</h2>
+        </div>
+        <a class="button button-secondary" href="genres.html">Browse Genres</a>
+      </div>
+      <div class="genre-grid" data-genre-grid></div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="featured-title">
+      <div class="feature-band" data-featured-movie id="featured-title"></div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Latest notes</p>
+          <h2 id="reviews-title">Latest Reviews</h2>
+        </div>
+        <a class="button button-secondary" href="reviews.html">Read Reviews</a>
+      </div>
+      <div class="review-grid" data-review-grid></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span><span>CineVerse</span></a>
+        <p>A curated movie discovery platform built for cinematic browsing, thoughtful recommendations, and polished presentation.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="movies.html">Movies</a>
+        <a href="genres.html">Genres</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <p class="eyebrow">Social</p>
+        <div class="social-row">
+          <a href="#" aria-label="CineVerse on Instagram">IG</a>
+          <a href="#" aria-label="CineVerse on X">X</a>
+          <a href="#" aria-label="CineVerse on Letterboxd">LB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
