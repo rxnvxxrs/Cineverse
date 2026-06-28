@@ -166,7 +166,7 @@
         : genreMap[genre] || [];
       const sample = genreMovies.slice(0, 3);
       return `
-        <article class="genre-card">
+        <article class="genre-card" data-genre="${genre}">
           <div class="genre-card__posters">
             ${sample.map((movie) => {
               if (movie.poster) {
@@ -185,6 +185,14 @@
     });
 
     container.innerHTML = cards.join("");
+    container.querySelectorAll(".genre-card").forEach((card) => {
+  card.style.cursor = "pointer";
+
+  card.addEventListener("click", () => {
+    const genre = card.dataset.genre;
+    window.location.href = `movies.html?genre=${encodeURIComponent(genre)}`;
+  });
+});
   }
 
   function describeGenre(genre) {
